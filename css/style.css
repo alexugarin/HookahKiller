@@ -2,6 +2,16 @@ header {
 height:70px;
 display:flex;
 }
+
 .logo {
-    float:left
+    height:70px;
+}
+
+.menu {
+    height:70px;
+
+}
+
+.basket {
+    height:70px;
 }
