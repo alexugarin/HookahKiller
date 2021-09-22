@@ -14,8 +14,8 @@
     font-family: 'Panton', 'Verdana', sans-serif;
     letter-spacing: 2px;
     position: relative;
-    margin: 0 34px 0 30px;
-    font-weight: 600;
+    
+    font-weight: 400;
     font-size: 15px;
     color: #fff;
     text-transform: uppercase;
@@ -28,7 +28,7 @@
     display: inline-block;
     margin-right:30px;
     position: relative;
-    padding: 15px 20px;
+    padding: 26px 0 25px 0;
     cursor: pointer;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
