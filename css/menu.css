@@ -4,11 +4,8 @@
     text-align: left;
     display: inline;
     margin: 0;
-    padding: 15px 4px 17px 0;
+    padding: auto 0;
     list-style: none;
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     height:70px;
   }
 
@@ -17,9 +14,10 @@
     font-family: 'Panton', 'Verdana', sans-serif;
     letter-spacing: 2px;
     position: relative;
-    padding-bottom: 20px;
     margin: 0 34px 0 30px;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
     text-transform: uppercase;
     display: inline-block;
     transition: color .2s;
@@ -28,10 +26,9 @@
   .menu-main li {
     
     display: inline-block;
-    margin-right: -4px;
+    margin-right:30px;
     position: relative;
     padding: 15px 20px;
-    background: #d0112b;
     cursor: pointer;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
