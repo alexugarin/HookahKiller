@@ -4,7 +4,7 @@ display:flex;
 }
 
 .logo {
-    height:70px;
+    max-height:70px;
 }
 
 .menu {
