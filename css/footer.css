@@ -24,6 +24,17 @@
     margin: 0 auto 35px;
     list-style-type: none;
 }
+.footer .footer-menu li a{
+    text-decoration: none;
+    font-family: 'Panton', 'Verdana', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
 .footer .footer-menu li a:hover{
     color: #d0112b;
 }
