@@ -36,7 +36,7 @@
     -o-transition: all 0.2s;
     transition: all 0.2s;
   }
-  .menu-main li:hover {
+  .menu-main li a:hover {
     color: #000;
   }
   .menu-main li ul {
