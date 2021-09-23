@@ -6,6 +6,7 @@
     font-family: 'Panton', 'Verdana', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+    transition: all 0.2s;
 }
 
 .footer-logo{
