@@ -40,30 +40,20 @@
     color: #000;
   }
   .menu-main li ul {
-<<<<<<< HEAD
-<<<<<<< HEAD
     padding: 20px 25px;
     margin: 0 auto;
     max-width: 970px;
     display: flex;
     justify-content: center;
-=======
-=======
->>>>>>> parent of bf5ae70 (container)
     padding: 0;
     position: absolute;
     top: 48px;
     left: 0;
     width: 150px;
-<<<<<<< HEAD
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     display: none;
->>>>>>> parent of 356e91b (ul flex)
-=======
-    display: none;
->>>>>>> parent of bf5ae70 (container)
     opacity: 0;
     visibility: hidden;
     -webkit-transiton: opacity 0.2s;
@@ -71,17 +61,11 @@
     -ms-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
     -transition: opacity 0.2s;
-<<<<<<< HEAD
     font-family: 'Panton', 'Verdana', sans-serif;
     font-size: 12px;
     line-height: 1.43;
     color: #010101;
-<<<<<<< HEAD
     text-transform: uppercase;
-=======
->>>>>>> parent of 356e91b (ul flex)
-=======
->>>>>>> parent of bf5ae70 (container)
   }
   .menu-main li ul li { 
     background: #fff; 
@@ -89,15 +73,8 @@
     color: #000;
     text-shadow: 0 -1px 0 #000;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> parent of bf5ae70 (container)
   .menu-main li ul li a:hover { color: #d0112b; }
-=======
   .menu-main li ul li:hover { background: #666; }
->>>>>>> parent of 356e91b (ul flex)
   .menu-main li:hover ul {
     display: block;
     opacity: 1;
