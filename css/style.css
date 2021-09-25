@@ -51,4 +51,6 @@ h2 {
 }
 .main-text p{
     text-align: center;
+    margin:0;
+    padding:0;
 }
