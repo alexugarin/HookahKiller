@@ -35,7 +35,7 @@ body {
 .slider{
     height:500px;
 }
-body main h2 {
+h2 {
     font-size: 60px;
     font-family: "BebasNeue", sans-serif;
     text-align: center;
