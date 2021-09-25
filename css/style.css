@@ -2,6 +2,10 @@
     font-family: Panton; /* Гарнитура шрифта */
     src: url(/fonts/Panton-Regular.ttf); /* Путь к файлу со шрифтом */
    }
+@font-face {
+   font-family: BebasNeue; /* Гарнитура шрифта */
+   src: url(/fonts/BebasNeue-Bold.ttf); /* Путь к файлу со шрифтом */
+}
 header {
 height:70px;
 display:flex;
@@ -30,4 +34,10 @@ body {
 
 .slider{
     height:500px;
+}
+main h2 {
+    font-size: 60px;
+    font-family: "BebasNeue", sans-serif;
+    text-align: center;
+    margin: 0.8em 0;
 }
