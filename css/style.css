@@ -6,15 +6,18 @@
    font-family: BebasNeue; /* Гарнитура шрифта */
    src: url(/fonts/BebasNeue-Bold.ttf); /* Путь к файлу со шрифтом */
 }
+
 header {
 height:70px;
 display:flex;
 background-color:#d0112b;
 }
+
 html, body{
     font-family: 'Panton', 'Verdana', sans-serif;
     font-weight: 400;
 }
+
 body {
     margin:0px;
 }
@@ -35,6 +38,7 @@ body {
 .slider img{
     max-width: 100%;
 }
+
 h2 {
     font-size: 50px;
     font-family: 'BebasNeue', sans-serif;
@@ -53,4 +57,8 @@ h2 {
     text-align: center;
     margin:0;
     padding:0;
+}
+
+table tr td{
+    max-width: 100%/4;
 }
