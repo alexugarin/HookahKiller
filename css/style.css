@@ -59,6 +59,7 @@ h2 {
     padding:0;
 }
 
-table tr td{
-    max-width: 100%/4;
+table tr td {
+    width: 100%/4;
+    background-image: url(/img/заглушка.png);
 }
