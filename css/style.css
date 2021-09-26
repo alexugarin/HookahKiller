@@ -34,7 +34,7 @@ body {
 
 .basket {
     height:70px;
-    width:100px;
+    padding: auto 0;
 }
 
 .slider img{
