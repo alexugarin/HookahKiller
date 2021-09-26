@@ -63,3 +63,6 @@ table tr td {
     width:25%;
     background-image: url(/img/заглушка.png);
 }
+table tr{
+    width:100%;
+}
