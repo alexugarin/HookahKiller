@@ -72,3 +72,20 @@ table tr{
 table {
     width:100%;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sidebar {
+    width: 25%;
+    float: left;
+}
+
+.catalog {
+    width: 75%;
+    float: right;
+    padding: 0 15px 0 30px;
+}
