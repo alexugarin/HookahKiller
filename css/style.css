@@ -101,23 +101,27 @@ table {
     
 }
 
-.container .imageK{
+.container-inf {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+.container-inf .imageK{
     position:absolute;
     top:0;
     left:0;
     width:50%;
 }
 
-.container .inf {
+.container-inf .inf {
     position:relative;
-    margin-left:50%;
-    max-width:700px;
     padding: 60px 80px;
     max-width: 700px;
     margin: 0 auto;
+    margin-left:50%;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #f3f3f3;
 }
 
 
