@@ -103,14 +103,14 @@ table {
 
 .container-inf {
     max-width: 1200px;
-    margin: 20 auto 0 auto;
+    margin: 20px auto 0 auto;
     padding: 0 15px;
     position: relative;
 }
 .container-inf .imageK{
     position:absolute;
-    top: 160px;;
-    left: 15px;;
+    top: 160px;
+    left: 15px;
     width:50%;
 }
 
