@@ -94,3 +94,6 @@ table {
     padding: 0 15px 0 30px;
     border: 2px solid black;
 }
+
+article, aside, details, figcaption, figure, footer,
+   hgroup, menu, nav, section { display: block; }
