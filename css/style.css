@@ -125,7 +125,10 @@ table {
     height:780px;
 }
  
-
+.text-clients{
+    text-align: justify;
+    padding:30px 10px 10px 10px;
+}
 
 article, aside, details, figcaption, figure, footer,
    hgroup, menu, nav, section { display: block; }
