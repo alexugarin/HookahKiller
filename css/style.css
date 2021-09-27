@@ -77,16 +77,18 @@ table {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    zoom:1;
+    overflow: hidden;
 }
 
 .sidebar {
     width: 25%;
     float: left;
+    box-sizing: border-box;
 }
 
 .catalog {
     width: 75%;
-    float: right;
+    float: left;
+    box-sizing: border-box;
     padding: 0 15px 0 30px;
 }
