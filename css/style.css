@@ -109,8 +109,8 @@ table {
 }
 .container-inf .imageK{
     position:absolute;
-    top:0;
-    left:0;
+    top: 160px;;
+    left: 15px;;
     width:50%;
 }
 
