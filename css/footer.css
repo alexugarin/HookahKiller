@@ -19,7 +19,7 @@
 .footer-menu{
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 800px;
     margin: 0 auto 35px;
     list-style-type: none;
 }

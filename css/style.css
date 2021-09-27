@@ -29,7 +29,8 @@ body {
 
 .menu {
     height:70px;
-
+    display: block;
+    width: 60%;
 }
 
 .basket {
