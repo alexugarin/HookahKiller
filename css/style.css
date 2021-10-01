@@ -41,13 +41,17 @@ body {
     max-width: 100%;
 }
 
+h1{
+
+}
+
 h2 {
     font-size: 50px;
     font-family: 'BebasNeue', sans-serif;
     text-align: center;
     margin: 0.8em 0;
 }
-
+ 
 
 h3 {
     font-size: 30px;
