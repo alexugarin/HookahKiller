@@ -12,7 +12,7 @@
 }
 
 .catalog-item_image{
-    min-height: 236px;
+    min-height: 175px;
     position:relative;
     display:block;
     overflow:hidden;
