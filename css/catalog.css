@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 32%;
+    width: 29%;
     padding: 0 15px;
     font-size: 16px;
     margin-bottom: 45px;
@@ -47,6 +47,8 @@
     vertical-align: middle;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin:0;
+    padding:0;
 }
 
 .catalog-item_price{
