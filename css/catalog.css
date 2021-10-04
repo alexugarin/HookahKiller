@@ -12,7 +12,7 @@
 }
 
 .catalog-item_image{
-    min-height: 175px;
+    min-height: 160px;
     position:relative;
     display:block;
     overflow:hidden;
@@ -54,3 +54,11 @@
 .catalog-item_price{
     font-weight: 700;
 }
+
+.breadcrumbs{
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 15px 25px;
+    margin:30px;
+}
+
