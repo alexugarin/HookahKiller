@@ -62,6 +62,10 @@
     margin:30px;
 }
 
+.pathcatalog{
+    font-size:14px;
+}
+
 .sort{
     float: right;
     margin-top: -17px;
