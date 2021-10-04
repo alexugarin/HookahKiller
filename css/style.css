@@ -109,7 +109,6 @@ table {
     float: left;
     box-sizing: border-box;
     padding: 0 15px 0 30px;
-    border: 2px solid black;
 }
 
 .container .stat{
