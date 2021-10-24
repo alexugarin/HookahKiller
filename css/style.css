@@ -40,6 +40,7 @@ body {
 .slider img{
     display:block;
     width: 100%;
+    height:auto;
 }
 
 h1{
