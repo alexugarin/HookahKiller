@@ -118,7 +118,7 @@
 }
 
 .slider__indicator_active {
-  background-color: #fff;
+  background-color: red;
 }
 
 
