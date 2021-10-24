@@ -120,3 +120,7 @@
 .slider__indicator_active {
   background-color: #fff;
 }
+
+.slider__indicators {
+  display: none;
+}
