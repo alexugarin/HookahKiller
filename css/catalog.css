@@ -82,3 +82,28 @@
     transition: opacity 0.4s ease-out;
 }
 
+
+/* стили страницы товара*/
+
+.col-12 {
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.product-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 1;
+    font-family: 'Panton', 'Verdana', sans-serif;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 30px;
+    font-weight: 700;
+}
