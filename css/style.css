@@ -149,3 +149,20 @@ table {
 
 article, aside, details, figcaption, figure, footer,
    hgroup, menu, nav, section { display: block; }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.product-content {
+    flex: 0 0 50%;
+    min-width: 50%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
