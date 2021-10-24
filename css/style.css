@@ -38,7 +38,8 @@ body {
 }
 
 .slider img{
-    min-width: 100%;
+    display:block;
+    width: 100%;
 }
 
 h1{
