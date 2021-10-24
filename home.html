@@ -11,6 +11,17 @@
   <link rel="stylesheet" href="css/simple-adaptive-slider.css">
   <script defer src="js/simple-adaptive-slider.js"></script>
  </head>
+ <script>
+ document.addEventListener('DOMContentLoaded', function () {
+    // инициализация слайдера
+    new SimpleAdaptiveSlider('.slider', {
+      loop: true,
+      autoplay: false,
+      interval: 5000,
+      swipe: true,
+    });
+  });
+</script>
  <body>
      <header>
         <div class="logo"><a href="home.html"><img height="70px" src="img/logo.png"></a></div> 
