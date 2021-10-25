@@ -41,13 +41,19 @@
             <form name="addProduct" class="contact_form" action="" method="post">
                 <fieldset>
                   <legend>Добавление товара в каталог</legend>
-                  <p><label for="name">Наименование <em>*</em></label><input type="text" id="name" placeholder="Наименование"></p>
-                  <p><label for="artikul">Артикул <em>*</em></label><input type="text" id="artikul" placeholder="Артикул"></p>
-                  <p><label for="price">Цена <em>*</em></label><input type="text" id="price" placeholder="Цена"></p>
-                  <p><label for="opis">Описание</label><input type="text" id="opis" placeholder="Описание товара"></p>
-                  <p><label for="charachter">Характеристики <em>*</em></label><input type="text" id="charachter" placeholder="Характеристики товара"></p>
-                  <p><label for="cpunt">Количество товара <em>*</em></label><input type="number" id="count" style="width:5%;" min="0"></p>
-                  <p><label for="photo">Фото товара </label><input type="file" id="photo"></p>
+                    <p><label for="name">Наименование <em>*</em></label><input type="text" id="name" placeholder="Наименование"></p>
+                    <p><label for="artikul">Артикул <em>*</em></label><input type="text" id="artikul" placeholder="Артикул"></p>
+                    <p><label for="price">Цена <em>*</em></label><input type="text" id="price" placeholder="Цена"></p>
+                    <p><label for="opis">Описание</label><input type="text" id="opis" placeholder="Описание товара"></p>
+                    <fieldset>
+                        <legend>Характеристики товара</legend>
+                        <p><label for="razmer">Размер <em>*</em></label><input type="text" id="razmer" placeholder="Размер товара"></p>
+                        <p><label for="ves">Вес <em>*</em></label><input type="text" id="ves" placeholder="Вес товара"></p>
+                        <p><label for="komplekt">Комплектация <em>*</em></label><input type="text" id="komplekt" placeholder="Комплектация товара"></p>
+                    </fieldset>
+                        <p><label for="charachter">Дополнительные характеристики</label><input type="text" id="charachter" placeholder="Дополнительные характеристики товара"></p>
+                    <p><label for="cpunt">Количество товара <em>*</em></label><input type="number" id="count" style="width:5%;" min="0"></p>
+                    <p><label for="photo">Фото товара </label><input type="file" id="photo"></p>
                 </fieldset>
               <p><button type="submit">Добавить</button></p>
               </form>
