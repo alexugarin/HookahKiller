@@ -3,6 +3,10 @@ label {
     margin-bottom: 0.5rem;
 }
 
+em {
+    color: #d0112b;
+}
+
 input{
     display: block;
     width: 97%;
