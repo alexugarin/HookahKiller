@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Акции | HookahKiller | Интернет-магазин вкусных облаков</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/formstyle.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <style>
+   article, aside, details, figcaption, figure, footer,
+   hgroup, menu, nav, section { display: block; }
+  </style>
+ </head>
+ <body>
+     <header>
+        <div class="logo"><a href="home.html"><img height="70px" src="img/logo.png"></a></div> 
+        <nav>
+            <div class="menu">
+                <ul class="menu-main">
+                    <li><a href="clients.html">Клиентам</a></li>
+                    <li><a href="aksessuars.html">Аксессуары</a></li>
+                    <li><a href="production.html">Продукция</a>
+                        <ul>
+                            <li>История</li>
+                            <li>Использование</li>
+                            <li>Обучение</li>
+                        </ul>
+                    </li>
+                    <li><a href="deliveryclub.html">Доставка</a></li>
+                    <li><a href="promotions.html">Акции</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="basket"><img src="img/basket.png"></div>
+    </header>
+<!--TEMPLATES-->
+    <main>
+        <div class="container">
+            <form name="addProduct" class="contact_form" action="" method="post">
+                <fieldset>
+                  <legend>Добавление товара в каталог</legend>
+                  <p><label for="name">Наименование <em>*</em></label><input type="text" id="name" placeholder="Наименование"></p>
+                  <p><label for="artikul">Артикул <em>*</em></label><input type="text" id="artikul" placeholder="Артикул"></p>
+                  <p><label for="price">Цена <em>*</em></label><input type="text" id="price" placeholder="Цена"></p>
+                  <p><label for="opis">Описание</label><input type="text" id="opis" placeholder="Описание товара"></p>
+                  <p><label for="charachter">Характеристики <em>*</em></label><input type="text" id="charachter" placeholder="Характеристики товара"></p>
+                  <p><label for="cpunt">Количество товара <em>*</em></label><input type="number" id="count" style="width:5%;" min="0"></p>
+                  <p><label for="photo">Фото товара </label><input type="file" id="photo"></p>
+                </fieldset>
+              <p><button type="submit">Добавить</button></p>
+              </form>
+        </div>
+    </main>
+<!--TEMPLATES-->
+    <footer class="footer">
+        <ul class="footer-menu">
+            <li><a href="clients.html">Клиентам</a></li>
+            <li><a href="aksessuars.html">Аксессуары</a></li>
+            <li><a href="production.html">Продукция</a></li>
+            <li><a href="#">История</a></li>
+            <li><a href="#">Использование</a></li>
+            <li><a href="#">Обучение</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="deliveryclub.html">Доставка</a></li>
+            <li><a href="promotions.html">Акции</a></li>
+
+        </ul>
+        <div class="footer-social">
+            <a class="social-button"><img height="40px" src="img/iconSocial/vkontakte.svg"></a>
+            <a class="social-button"><img height="40px" src="img/iconSocial/facebook.svg"></a>
+            <a class="social-button"><img height="40px" src="img/iconSocial/telegram.svg"></a>
+            <a class="social-button"><img height="40px" src="img/iconSocial/instagram.svg"></a>
+        </div>
+        <span class="footer-logo"></span>
+        <div class="footer-text">
+            <p>Служба поддержки: 8-800-555-35-35</p>
+            <p>© 2021 Alexey Ugarin. All rights reserved.</p>
+            <p>Информация, содержащаяся на настоящем сайте, не является рекламой, так как представляет собой каталог для ограниченного круга лиц - совершеннолетних потребителей табачной продукции для предоставления им достоверной информации об основных потребительских свойствах и качественных характеристик товаров, ассортименте товаров, правилах их использования (п.п.1, 2 ст.10 Закона «О защите прав Потребителя»).</p>
+        </div>
+    </footer>
+ </body>
+</html>
