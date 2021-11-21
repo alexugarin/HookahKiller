@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/formstyle.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <script defer src="js/no-copy.js"></script>
   <style>
    article, aside, details, figcaption, figure, footer,
    hgroup, menu, nav, section { display: block; }
@@ -35,24 +37,65 @@
         </nav>
          <div class="basket"><img src="img/basket.png"><a href="addProduct.html"><img style="height:68px;" src="img/login.png"></a></div>
     </header>
+<!--VALIDATION JS-->
+    <script>
+        function checkInput(el){
+            var id = el.getAttribute("id");
+            var lbl = document.getElementsByTagName("label");
+            var spn;
+            var em;
+            for (i=0;i<lbl.length;i++){
+                if(lbl[i].htmlFor == id)
+                    for(j=0;j<lbl[i].children.length;j++)
+                        if(lbl[i].children[j].tagName=="SPAN"){
+                            spn=lbl[i].children[j];
+                        }
+                        else if(lbl[i].children[j].tagName=="EM"){
+                            em=lbl[i].children[j];
+                        }
+            }
+            if ((null!=el.getAttribute("required") && el.value=="")
+            ||((el.id=="price"||el.id=="ves")&&!isNumber(el.value))
+            ||(el.id=="artikul"&&!isArt(el.value))
+            ||(el.id=="razmer"&&!isRazmer(el.value))
+            ||(el.id=="name"&&!isName(el.value)))
+            {
+                el.classList.add("red");
+                el.focus();
+                spn.style.display="block";
+                em.style.display="inline";
+            }
+            else {
+                el.classList.remove("red");
+                spn.style.display="none";
+                em.style.display="none";
+            }
+        }
+
+        function isName(n) {return /^[а-яА-Яa-zA-Z#№"\s]{6,100}$/.test(n);}
+        function isNumber(n) {return /^[\d.]+(?:e-?\d+)?$/.test(n);}
+        function isArt(n) {return /^\d{6}$/.test(n);}
+        function isRazmer(n) {return /^[1-9]\d*[Xx][1-9]\d*[Xx][1-9]\d*$/.test(n);}
+    </script>
+<!--VALIDATION JS-->
 <!--TEMPLATES-->
     <main>
         <div class="container">
             <form name="addProduct" class="contact_form" action="" method="post">
                 <fieldset>
                   <legend>Добавление товара в каталог</legend>
-                    <p><label for="name">Наименование <em>*</em></label><input type="text" id="name" placeholder="Наименование"></p>
-                    <p><label for="artikul">Артикул <em>*</em></label><input type="text" id="artikul" placeholder="Артикул"></p>
-                    <p><label for="price">Цена <em>*</em></label><input type="text" id="price" placeholder="Цена"></p>
-                    <p><label for="opis">Описание</label><input type="text" id="opis" placeholder="Описание товара"></p>
+                    <p><label for="name">Наименование <em>*</em> <span class="r">Обязательное для заполнения. Формат: Любые буквы кириилицы и латинского алфавита, включая знаки: #, №, ", пробелы. Минимум 6 символов</span></label><input maxlength="100" class="red" type="text" id="name" placeholder="Наименование" onkeyup="checkInput(this);" required></p>
+                    <p><label for="artikul">Артикул <em>*</em> <span class="r">Обязательное для заполнения Введите целое число!</span></label><input maxlength="6" class="red" type="text" id="artikul" placeholder="Артикул" onkeyup="checkInput(this);" required></p>
+                    <p><label for="price">Цена <em>*</em><span class="r">Обязательное для заполнения. Введите число!</span></label><input maxlength="20" class="red" type="text" id="price" placeholder="Цена" onkeyup="checkInput(this);" required></p>
+                    <p><label for="opis">Описание</label><textarea type="text" id="opis" placeholder="Описание товара" onkeyup="checkInput(this);"></textarea></p>
                     <fieldset>
                         <legend>Характеристики товара</legend>
-                        <p><label for="razmer">Размер <em>*</em></label><input type="text" id="razmer" placeholder="Размер товара"></p>
-                        <p><label for="ves">Вес <em>*</em></label><input type="text" id="ves" placeholder="Вес товара"></p>
-                        <p><label for="komplekt">Комплектация <em>*</em></label><input type="text" id="komplekt" placeholder="Комплектация товара"></p>
+                        <p><label for="razmer">Размер(ДxШxВ) <em>*</em><span class="r">Обязательное для заполнения.  Формат: Длина(мм)XШирина(мм)XВысота(мм)</span></label><input class="red" type="text" id="razmer" placeholder="Размер товара" onkeyup="checkInput(this);" required></p>
+                        <p><label for="ves">Вес(гр) <em>*</em><span class="r">Обязательное для заполнения</span></label><input class="red" type="text" id="ves" placeholder="Вес товара" onkeyup="checkInput(this);" required></p>
+                        <p><label for="komplekt">Комплектация <em>*</em><span class="r">Обязательное для заполнения</span></label><input class="red" type="text" id="komplekt" placeholder="Комплектация товара" onkeyup="checkInput(this);"></p>
                     </fieldset>
-                        <p><label for="charachter">Дополнительные характеристики</label><input type="text" id="charachter" placeholder="Дополнительные характеристики товара"></p>
-                    <p><label for="cpunt">Количество товара <em>*</em></label><input type="number" id="count" style="width:5%;" min="0"></p>
+                        <p><label for="charachter">Дополнительные характеристики</label><textarea type="text" id="charachter" placeholder="Дополнительные характеристики товара" onkeyup="checkInput(this);"></textarea></p>
+                    <p><label for="count">Количество товара <em>*</em><span class="r">Обязательное для заполнения</span></label><input class="red" type="number" id="count" style="width:5%;" min="0" onchange="checkInput(this);" required></p>
                     <p><label for="photo">Фото товара </label><input type="file" id="photo"></p>
                 </fieldset>
               <p><button type="submit">Добавить</button></p>

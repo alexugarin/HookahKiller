@@ -5,7 +5,7 @@
   <title>HookahKiller | Интернет-магазин вкусных облаков</title>
 
   <link rel="stylesheet" href="css/modal-window-age.css">
-  <script src="js/modal.js"></script>
+  
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/menu.css">
@@ -17,23 +17,12 @@
   <link rel="stylesheet" href="css/scroll-btn.css">
   <script defer src="js/scroll-btn.js"></script>
 
+  <link rel="stylesheet" href="css/sliderShow.css">
   <link rel="stylesheet" href="css/simple-adaptive-slider.css">
-  <script defer src="js/simple-adaptive-slider.js"></script>
 
   
-
  </head>
- <script>
- document.addEventListener('DOMContentLoaded', function () {
-    // инициализация слайдера
-    new SimpleAdaptiveSlider('.slider', {
-      loop: true,
-      autoplay: false,
-      interval: 5000,
-      swipe: true,
-    });
-  });
-</script>
+ 
  <body>
      <header>
         <div class="logo"><a href="home.html"><img height="70px" src="img/logo.png"></a></div> 
@@ -60,23 +49,67 @@
     <main>
         <div class="slider">
             <div class="slider__wrapper">
-              <div class="slider__items">
-                <div class="slider__item">
-                    <a href="clients.html"><img src="img/slider/3.jpg"></a>
-                </div>
-                <div class="slider__item">
-                    <a href="aksessuars.html"><img src="img/slider/2.jpg"></a>
-                </div>
-                <div class="slider__item">
-                    <a href="promotions.html"><img src="img/slider/1.jpg"></a>
-                </div>
-                
-              </div>
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <a href="clients.html">
+                      <img src="img/slider/3.jpg" style="width:100%">
+                      </a>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <a href="aksessuars.html">
+                      <img src="img/slider/2.jpg" style="width:100%">
+                    </a>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <a href="promotions.html">
+                      <img src="img/slider/1.jpg" style="width:100%">
+                    </a>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
             </div>
-            <!-- Стрелки для перехода к предыдущему и следующему слайду -->
-            <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-            <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
           </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
         <h1>ЛУЧШЕЕ ДЛЯ ТЕБЯ</h1>
         <table cellspacing="0">
             <tr>
